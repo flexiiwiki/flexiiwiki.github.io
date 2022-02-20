@@ -21,7 +21,7 @@
     <div style="margin-top:50px">
       <table border = "4" cellpadding = "25" cellspacing = "5">
            <tr>
-              <td><p style="font-size:30px">hi im flexii :)<img src="images/kitty.gif" style="width:25px;height:auto;margin-left:10px;margin-top:10px"></p><br> <p style="font-size:20px">i make <a href="">music</a> and i <a href="">listen</a> to it a lot too</p><br><p style="font-size:10px;margin-left:50px">(i think ur cool for clicking this website)</p></td>
+              <td><p style="font-size:30px">hi im flexii :)<img src="images/kitty.gif" style="width:25px;height:auto;margin-left:10px;margin-top:10px"></p><br> <p style="font-size:20px">i make <a href="https://soundcloud.com/flexiimusic">music</a> and i <a href="https://last.fm/user/simplyflexii/">listen</a> to it a lot too</p><br><p style="font-size:10px;margin-left:50px">(i think ur cool for clicking this website)</p></td>
            </tr>
         </table>
     </div>
@@ -39,18 +39,50 @@
            </tr>
         </table>
     </div>
-    <div style="margin-top:50px">
+    <div style="margin-top:50px;position:fixed;left:50%;transform:translate(-50%,0%)">
       <table border = "4" cellpadding = "25" cellspacing = "5">
            <tr>
               <td>
                 <img src="images/love.gif" style="float:left">
                 <img src="images/flcl.gif" style="width:50px;height:auto">
+                <img src="images/run.gif" style="width:50px;height:auto">
                 <img src="images/AGG.gif" style="width:50px;height:auto">
                 <img src="images/love.gif" style="float:right">
               </td>
            </tr>
         </table>
     </div>
+      <div style="margin-top:-670px;float:right">
+        <table border = "4" cellpadding = "25" cellspacing = "5">
+             <tr>
+                <td>
+        <div id='ruffle'></div>
+                          <script src='https://e9x.github.io/ruffle-example/ruffle.js'></script>
+                          <script>
+                  var swfobject = {};
+
+                  swfobject.embedSWF = function(url, cont, width, height){
+                      var ruffle = window.RufflePlayer.newest(),
+                          player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                              width: width,
+                              height: height,
+                              style: 'width: ' + width + 'px; height: ' + height + 'px',
+                          });
+                      player.config = {
+                        "autoplay": "on",
+                        "unmuteOverlay": "hidden"
+                      }
+
+                      player.load({ url: url, parameters: "cn=scrimblo&an=flexii&clr=0xffdcdc", allowScriptAccess:true, });
+                  }
+
+                  swfobject.embedSWF('http://petswf.bunnyherolabs.com/adopt/swf/bunny', 'ruffle', 250, 300);
+                          </script>
+
+                        </td>
+                     </tr>
+                  </table>
+                </div>
     <div style="margin-bottom:90px">
       <marquee><img src="images/redplane.gif" style="margin-top:60px;width:50px;height:auto"></img></marquee>
     </div>
