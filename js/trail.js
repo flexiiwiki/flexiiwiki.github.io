@@ -32,7 +32,6 @@ s=(ns)?'':'.style';
 
 if (ns){
 	for (i = 0; i < n; i++)
-		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
 }
 
 if (ie)
